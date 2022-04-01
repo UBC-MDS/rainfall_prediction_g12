@@ -14,7 +14,7 @@ We tried two different approaches to reduce memory usage while performing EDA, t
 
 Both of the methods use less memory, note that we do not know which datatype consume the least memory in advance.
 
-## Transfer dataframe from Python to R
+### Transfer dataframe from Python to R
 Here we choose to use a parquet file to transfer the dataframe from Python to R for the following reasons:
 
 - `Parquet` has already well implemented in `pandas`, we can perform the transformation by the function `to_parquet` directly.
