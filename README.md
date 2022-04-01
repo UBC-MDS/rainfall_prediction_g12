@@ -18,9 +18,7 @@ Both of the methods use less memory, note that we do not know which datatype con
 Here we choose to use a parquet file to transfer the dataframe from Python to R for the following reasons:
 
 - `Parquet` has already well implemented in `pandas`, we can perform the transformation by the function `to_parquet` directly.
--  `Parquet` files work well with rarrow. By default rarrow reads and processes da
-
-We chose to use a parquet file to transfer the dataframe from Python to R because parquet files work well with rarrow. rarrow is ideal because by default, it reads and processes data in chunks, which we saw greatly improved our CSV loading time.
+-  `Parquet` files work well with rarrow. By default rarrow reads and processes data in chuncks, which will greatly improve the loading time. 
 
 ## Contributors
 The following people contributed to the rainfall prediction project:
